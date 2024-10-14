@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="ConcreteMember klasse erstellt und gefüllt">
+    <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="Leere Methoden Container">
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ContainerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ConcreteMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/ConcreteMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung2/Container.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +81,7 @@
       <workItem from="1727176958305" duration="1892000" />
       <workItem from="1728313091232" duration="2955000" />
       <workItem from="1728380619860" duration="10427000" />
-      <workItem from="1728912311966" duration="1404000" />
+      <workItem from="1728912311966" duration="3413000" />
     </task>
     <task id="LOCAL-00001" summary="Übung 1 Aufgabe 1">
       <option name="closed" value="true" />
@@ -105,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728913794856</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Leere Methoden Container">
+      <option name="closed" value="true" />
+      <created>1728914152695</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728914152695</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +126,8 @@
     <MESSAGE value="Übung 1 Aufgabe 1" />
     <MESSAGE value="Container Klasse erstellt" />
     <MESSAGE value="ConcreteMember klasse erstellt und gefüllt" />
-    <option name="LAST_COMMIT_MESSAGE" value="ConcreteMember klasse erstellt und gefüllt" />
+    <MESSAGE value="Leere Methoden Container" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leere Methoden Container" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
