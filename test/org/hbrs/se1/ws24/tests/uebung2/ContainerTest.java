@@ -8,6 +8,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 public class ContainerTest {
 
     Container container;
@@ -34,17 +37,17 @@ public class ContainerTest {
     }
 
     @Test
-    public void deleteTest(){
+    public void deleteTest() throws ContainerException {
         ConcreteMember m1 = new ConcreteMember(0);
 
-        assertEquals("Das Member-Objekt mit der ID "+id+" ist nicht vorhanden!", container.deleteMember(0));
+        assertEquals("Das Member-Objekt mit der ID 0 ist nicht vorhanden!", container.deleteMember(0));
         container.addMember(m1);
-        assertEquals("Das Member-Objekt mit der ID "+id+" ist nicht vorhanden!", container.deleteMember(1));
-        assertEquals("Das Member-Objekt mit der ID "+id+" wurde gelöscht!", container.deleteMember(0));
+        assertEquals("Das Member-Objekt mit der ID 0 ist nicht vorhanden!", container.deleteMember(1));
+        assertEquals("Das Member-Objekt mit der ID 0 wurde gelöscht!", container.deleteMember(0));
     }
 
     @Test
-    public void dumpTest(){
+    public void dumpTest() throws ContainerException {
         ConcreteMember m1 = new ConcreteMember(0);
         ConcreteMember m2 = new ConcreteMember(1);
 
@@ -69,7 +72,7 @@ public class ContainerTest {
     }
 
     @Test
-    public void sizeTest(){
+    public void sizeTest() throws ContainerException {
         ConcreteMember m1 = new ConcreteMember(0);
         ConcreteMember m2 = new ConcreteMember(1);
 
