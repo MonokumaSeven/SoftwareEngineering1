@@ -49,7 +49,7 @@ public class ContainerTest {
     @Test
     public void dumpTest() throws ContainerException {
         ConcreteMember m1 = new ConcreteMember(0);
-        ConcreteMember m2 = new ConcreteMember(1);
+        ConcreteMember m3 = new ConcreteMember(1);
 
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
