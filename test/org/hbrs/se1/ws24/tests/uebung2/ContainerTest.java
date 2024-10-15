@@ -74,7 +74,7 @@ public class ContainerTest {
     @Test
     public void sizeTest() throws ContainerException {
         ConcreteMember m1 = new ConcreteMember(0);
-        ConcreteMember m2 = new ConcreteMember(1);
+        ConcreteMember m3 = new ConcreteMember(1);
 
         assertEquals(0, container.size());
 
