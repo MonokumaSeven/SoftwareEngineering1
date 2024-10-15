@@ -25,8 +25,10 @@ public class Container {
     }
 
     public void dump(){
-        for (int i=0; i<list.size(); i++){
-            System.out.println(list.get(i).toString());
+        if (!list.isEmpty()){
+            for (int i=0; i<list.size(); i++){
+                System.out.println(list.get(i).toString());
+            }
         }
     }
 
