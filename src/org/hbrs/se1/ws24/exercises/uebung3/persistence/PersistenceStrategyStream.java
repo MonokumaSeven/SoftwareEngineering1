@@ -1,4 +1,5 @@
 package org.hbrs.se1.ws24.exercises.uebung3.persistence;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.List;
@@ -7,6 +8,9 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
 
     // URL of file, in which the objects are stored
     private String location = "objects.ser";
+
+    private ObjectOutputStream oos;
+    private ObjectInputStream ois;
 
     // Backdoor method used only for testing purposes, if the location should be changed in a Unit-Test
     // Example: Location is a directory (Streams do not like directories, so try this out ;-)!
@@ -22,6 +26,13 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
      * (Last Access: Oct, 15th 2024)
      */
     public void save(List<E> member) throws PersistenceException  {
+        try {
+           oos.writeObject(member);
+           oos.flush();
+        }
+        catch (IOException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Connection not available");
+        }
 
     }
 
@@ -52,6 +63,16 @@ public class PersistenceStrategyStream<E> implements PersistenceStrategy<E> {
         // return newListe
 
         // and finally close the streams
-        return null;
+        List<E> list = null;
+        try {
+            Object obj = ois.readObject();
+            if (obj instanceof List<?> newList) {
+                list = (List<E>) obj;
+            }
+            return list;
+        }
+        catch (ClassNotFoundException | IOException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Connection not available");
+        }
     }
 }

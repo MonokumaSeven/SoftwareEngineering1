@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11b931b2-f8a2-4546-af99-1df1f0f211cc" name="Changes" comment="final">
-      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung2/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung2/ContainerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/ConcreteMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/ContainerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/MemberView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws24/tests/uebung3/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises/uebung3/persistence/PersistenceStrategyStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -48,7 +57,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/laura/IdeaProjects/Prog2U4",
+    "last_opened_file_path": "C:/Users/laura/IdeaProjects/codesSEws24/test/org/hbrs/se1/ws24/tests/uebung3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,12 +69,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\laura\IdeaProjects\codesSEws24\test\org\hbrs\se1\ws24\tests\uebung3" />
       <recent name="C:\Users\laura\IdeaProjects\codesSEws24\test\org\hbrs\se1\ws24\tests\uebung2" />
       <recent name="$PROJECT_DIR$/src/org/hbrs/se1/ws24/exercises" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\laura\IdeaProjects\codesSEws24\test\org\hbrs\se1\ws24\tests" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.hbrs.se1.ws24.exercises.uebung3.persistence" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -88,7 +101,8 @@
       <workItem from="1728313091232" duration="2955000" />
       <workItem from="1728380619860" duration="10427000" />
       <workItem from="1728912311966" duration="3952000" />
-      <workItem from="1728991403545" duration="7059000" />
+      <workItem from="1728991403545" duration="7845000" />
+      <workItem from="1729521995815" duration="10843000" />
     </task>
     <task id="LOCAL-00001" summary="Übung 1 Aufgabe 1">
       <option name="closed" value="true" />
@@ -154,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728998983261</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="final">
+      <option name="closed" value="true" />
+      <created>1728999300086</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728999300086</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
